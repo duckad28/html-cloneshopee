@@ -1,0 +1,136 @@
+@media (max-width: 1023px) {
+
+
+    .hide-on-mobile-tablet {
+        display: none; 
+    }
+    :root {
+        --header-height: 68px;
+        --header__navbar-height: 0px;
+    }
+
+    .app__header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
+    }
+    .header__searchbar-cart-wrap {
+            width: 60px;
+    }
+    .header__searchbar-cart {
+        
+    }
+    .cart-list-wrap {
+        position: fixed;
+        top: var(--header-height);
+        right: 0;
+        width: 100%;
+        padding:0 calc((100% - 644px)/2);
+    }
+    .cart-list-wrap::before {
+        display: none;
+    }
+    
+
+    .slider__container:hover .hide-on-mobile-tablet.slider__container-btn {
+        display: none;
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 740px) {
+    .hide-on-tablet {
+        display: none; 
+    }   
+    .app__slider {
+        margin-top: calc(var(--header-height) + 30px);
+    }
+}
+
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none; 
+    }   
+    .show-on-mobile {
+        display: block; 
+    }  
+    /* :root {
+        --white-color: var(--primary-color);
+        --primary-color: #fff;
+    }
+     */
+    .no-wrap {
+        flex-wrap: nowrap;
+    }
+     .pagination__item {
+        padding: 4px;
+     }
+
+     .pagination__item-link{
+        min-width: 32px;
+        font-size: 1.4rem;
+     }
+     .app__slider {
+        margin-top: calc(var(--header-height)) ;
+    }
+     .slider__container-page {
+        bottom: var(--page-circle-height);
+     }
+    .slider__container-page .page-circle {
+        --page-circle-height: 8px;
+    }
+
+    .app__brand {
+        margin-top: 15px;
+        /* overflow: hidden; */
+        
+    }
+
+    .brand__list {
+        overflow-x: scroll;
+        position: unset;
+    }
+
+    .brand__list::-webkit-scrollbar {
+        display: none;
+    }
+    .brand__container  {
+        height: 90px;
+        padding: 0 8px;
+        width: 100%;
+    }
+
+    .brand__header {
+        height: 20px;
+        padding: 10px 0px 0 ;
+    }
+    .brand__header-link {
+        
+    }
+    .brand__header-heading {
+        font-size: 1.4rem;
+    }
+
+    .brand__header-btn {
+        font-size: 1.2rem;
+    }
+
+    .brand__list-item {
+        border-left: 0;
+        border-bottom: 0;
+        border: 2px solid rgba(0,0,0,.05);
+    }
+
+
+    .brand__list-item-img-wrap {
+        padding-top:52px;
+    }
+    .app__beside-info {
+        padding: 0 4px;
+    }
+    .top-product__item-link {
+        align-items: baseline;
+    }
+
+}

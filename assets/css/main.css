@@ -1082,7 +1082,7 @@
 .slider__container {
     width: 100%;
     padding-top: calc(100% / 3.33333);
-    background-image:url(/assets/img/slider/slider1.jfif);
+    background-image:url(./assets/img/slider/slider1.jfif);
     background-repeat: no-repeat;
     background-size: contain;
     position: relative;
